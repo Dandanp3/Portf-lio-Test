@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(to left, rgba(0, 0, 0, 1) 60%, rgba(250, 241, 81, 0.7));
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s ease-in-out; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+  }
+
+.gojo {
+    position: relative;
+    top: 4px;
+    height: auto;
+    width: 1105px;
+    animation: wave 3s infinite ease-in-out; 
+    filter: drop-shadow(0 0 6px rgba(138, 43, 226, 0.8)) 
+    drop-shadow(0 0 12px rgba(138, 43, 226, 0.8))
+    drop-shadow(0 0 18px rgba(138, 43, 226, 1));
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center;
+}
+
+.botao-home {
+    display: inline-block; 
+    padding: 15px 30px;
+    font-size: 24px; 
+    color: white; 
+    background-color: #6a0dad; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 10px; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    box-shadow: 0px 0px 8px black;
+}
+
+.botao-home:hover {
+    background-color: #4a0081; 
+}
+
+h1 {
+    font: normal 30pt Andale Mono, monospace;
+    color: #F0F0F0;
+    top: -25px;
+}
+
+h1, .button-hover {
+    margin: 0; 
+}
+
+p {
+    font: normal 14pt Arial, sans-serif;
+    color: #F0F0F0;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out; 
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes wave {
+    0% {
+      transform: translateX(0); 
+    }
+    25% {
+      transform: translateX(-10px); 
+    }
+    50% {
+      transform: translateX(0); 
+    }
+    75% {
+      transform: translateX(10px); 
+    }
+    100% {
+      transform: translateX(0); 
+    }
+  }
+
+  @keyframes neon-glow {
+    0% {
+      filter: drop-shadow(0 0 10px rgba(138, 43, 226, 0.8)) 
+              drop-shadow(0 0 20px rgba(138, 43, 226, 0.8)) 
+              drop-shadow(0 0 30px rgba(138, 43, 226, 1));
+    }
+    50% {
+      filter: drop-shadow(0 0 20px rgba(138, 43, 226, 1)) 
+              drop-shadow(0 0 40px rgba(138, 43, 226, 1)) 
+              drop-shadow(0 0 60px rgba(138, 43, 226, 1));
+    }
+    100% {
+      filter: drop-shadow(0 0 10px rgba(138, 43, 226, 0.8)) 
+              drop-shadow(0 0 20px rgba(138, 43, 226, 0.8)) 
+              drop-shadow(0 0 30px rgba(138, 43, 226, 1));
+    }
+  }

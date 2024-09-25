@@ -1,0 +1,136 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    background: linear-gradient(to right, rgba(0, 37, 78, 0.78), rgba(183, 0, 193, 0.78), rgba(94, 0, 0, 0.78));
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    height: 750px;
+    width: 1700px; 
+    border: 3px solid rgba(136, 17, 190, 0.5);
+    border-radius: 40px;
+    box-sizing: border-box; 
+    position: relative; 
+    animation: fadeInUp 1s ease-out; 
+}
+
+.gojo {
+    position: relative;
+    height: auto;
+    width: 812px;
+    left: 40px;
+    margin-right: 20px;
+    filter: drop-shadow(0 -6px 6px rgba(138, 43, 226, 0.8)) 
+            drop-shadow(-6px 0 12px rgba(138, 43, 226, 0.8))
+            drop-shadow(6px 0 12px rgba(138, 43, 226, 0.8))
+            drop-shadow(0 6px 0 transparent); 
+    animation: fadeInUp 1s ease-out 0.5s; 
+}
+
+.texto {
+    position: absolute; 
+    top: 120px; 
+    left: 20px; 
+    width: calc(100% - 40px); 
+    animation: fadeInUp 1s ease-out 1s; 
+}
+
+p {
+    position: relative;
+    right: 20px;
+    overflow-wrap: break-word;
+    font: normal 18pt Arial;
+    color: white;
+    margin: 0; 
+    line-height: 1.6; 
+    max-width: calc(100% - 540px); 
+}
+
+h1 {
+    font: italic 25pt Sans-Serif;
+    color: white;
+    position: absolute; 
+    top: -60px; 
+    left: 150px; 
+    margin: 0; 
+    animation: fadeInUp 1s ease-out 1.5s; 
+}
+
+.redes {
+    position: fixed; 
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex; 
+    gap: 10px; 
+    justify-content: center; 
+    align-items: center;
+    border: 2px solid rgba(138, 43, 226, 0.8);
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(91, 87, 94, 0.8), rgba(10, 8, 10, 1));
+    height: 60px;
+    width: 200px;
+    animation: fadeInUp 1s ease-out 2s; 
+}
+
+.redes a {
+    display: inline-block; 
+    position: relative; 
+}
+
+.redes img {
+    width: 30px;
+    height: auto; 
+    display: block; 
+    transition: 0.3s ease-in-out;
+    border-radius: 50%; 
+}
+
+.redes img:hover {
+    opacity: 0.8; 
+    transform: scale(1.1); 
+    filter: drop-shadow(0 0 10px rgba(138, 43, 226, 0.8)) 
+            drop-shadow(0 0 20px rgba(138, 43, 226, 0.8)) 
+            drop-shadow(0 0 30px rgba(138, 43, 226, 1)); 
+}
+
+.botoes {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    display: flex; 
+    gap: 10px; 
+    animation: fadeInUp 1s ease-out 2.5s; 
+}
+
+.botoes a {
+    font: italic 25pt Sans-Serif;
+    text-decoration: none; 
+    color: white; 
+    font-size: 18px;
+    padding: 10px 20px; 
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.botoes a:hover {
+    background: linear-gradient(to top, rgba(115, 0, 121, 0.78), rgba(228, 2, 240, 0.78)); 
+    transform: scale(1.1);
+}
