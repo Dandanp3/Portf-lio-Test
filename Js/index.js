@@ -22,9 +22,9 @@ document.getElementById('botaoAcesso').addEventListener('click', function(event)
         video.style.left = '0'
         video.style.width = '100%'
         video.style.height = '100%'
-        video.style.objectFit = 'cover' //preenche a tela
+        video.style.objectFit = 'cover'
         video.style.zIndex = '9999' //garante que o video fique acima
-        video.controls = false //tira os controles do video
+        video.controls = false 
         video.setAttribute('playsinline', '');
         document.body.appendChild(video)
 
